@@ -16,11 +16,7 @@
 		<div class="wrap">
 			<header class="entry-header">
 				<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-
-				<?php twentyseventeen_edit_link( get_the_ID() ); ?>
-
 			</header><!-- .entry-header -->
-
 			<div class="entry-content">
 				<?php
 					/* translators: %s: Name of current post */
@@ -30,6 +26,9 @@
 					) );
 				?>
 			</div><!-- .entry-content -->
+			<footer class="entry-footer">
+				<?php twentyseventeen_edit_link( get_the_ID() ); ?>
+			</footer><!-- .entry-footer -->
 
 		</div><!-- .wrap -->
 	</div><!-- .panel-content -->
